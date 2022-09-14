@@ -1,0 +1,31 @@
+{
+    "name": "@kyloc20/mymui-react-textfield",
+    "version": "0.1.0",
+    "description": "a TextField UI component made with React&Typescript",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "files": [
+        "/build"
+    ],
+    "scripts": {
+        "test": "jest",
+        "build": "rimraf build && rimraf types && tsc"
+    },
+    "peerDependencies": {
+        "lodash": ">=4",
+        "react": ">=17",
+        "react-dom": ">=17"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.4.0",
+        "@types/lodash": "^4.14.185",
+        "@types/react": ">=17",
+        "@types/react-dom": ">=17",
+        "jest": "^27.4.5",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.79.0"
+    },
+    "keywords": [],
+    "author": "liuzeduo1234@gmail.com",
+    "license": "ISC"
+}

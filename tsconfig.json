@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES5",//initial
+        "module": "ESNext",//initial
+        "declaration": true,//initial
+        "outDir": "./build",//initial
+        "jsx": "react",//initial
+        "moduleResolution":"Node", 
+        /*
+        Note: node module resolution is the most-commonly used in the TypeScript community and is recommended for most projects. 
+        If you are having resolution problems with imports and exports in TypeScript,
+        try setting moduleResolution: "node" to see if it fixes the issue.
+        If not specified, the default is Node for --module commonjs,
+         and Classic otherwise (including when module is set to amd, system, umd, es2015, esnext, etc.).
+        **/
+        "allowSyntheticDefaultImports":true//otherwise  import React, { PropsWithChildren, useState, ChangeEvent } from "react"; can only be default-imported using the 'allowSyntheticDefaultImports' flag
+
+    },
+    "include": ["src/**/*"],//initial
+    "exclude": ["node-modules", "**/__tests__/*"]//initial
+}
